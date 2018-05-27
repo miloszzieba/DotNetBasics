@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="BaseModel.cs" />
     <Compile Include="Book.cs" />
+    <Compile Include="Exceptions\AnalyzerDataException.cs" />
     <Compile Include="IModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Warning\BookWarning.cs" />

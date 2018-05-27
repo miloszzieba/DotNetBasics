@@ -5,7 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using DotNet.DAL;
 using DotNet.Models;
+using DotNet.Models.Exceptions;
 using DotNet.Models.Warning;
+using DotNet.Tools;
 
 namespace DotNet.Services.Analyzares
 {
@@ -23,6 +25,8 @@ namespace DotNet.Services.Analyzares
             var warningList = new List<BookWarning>();
 
             var zeroBooks = _bookRepository.GetBooksByProducts(0);
+            if (zeroBooks.IsNullOrEmpty())
+                throw new AnalyzerDataException("Lista jest pusta");
 
             foreach (var book in zeroBooks)
             {

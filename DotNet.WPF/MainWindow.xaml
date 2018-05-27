@@ -1,0 +1,21 @@
+﻿<Window x:Class="DotNet.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DotNet.WPF"
+        mc:Ignorable="d"
+        Title="DotNetBasics" Height="450" Width="800">
+    <Grid Visibility="Visible">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="4*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBox Grid.Row="0" Height="30px" Width="300px" Name="ExampleTextBox"></TextBox>
+        <Button VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Row="1" Height="100px" Width="100px" Name="ExampleButton" Click="ExampleButton_Click">Kliknij mnie</Button>
+    </Grid>
+</Window>

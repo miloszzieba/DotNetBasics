@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet.ConsoleApp", "DotNet
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet.Services", "DotNet.Services\DotNet.Services.csproj", "{231CBB9D-CCC9-4240-94A9-6A813FCC74B9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet.Tools", "DotNet.Tools\DotNet.Tools.csproj", "{3B4E0E31-710F-4E49-A1FC-FF0F95D2440D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet.WPF", "DotNet.WPF\DotNet.WPF.csproj", "{5CF41275-BFB8-4EB8-A716-AF30430062F1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{231CBB9D-CCC9-4240-94A9-6A813FCC74B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{231CBB9D-CCC9-4240-94A9-6A813FCC74B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{231CBB9D-CCC9-4240-94A9-6A813FCC74B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B4E0E31-710F-4E49-A1FC-FF0F95D2440D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B4E0E31-710F-4E49-A1FC-FF0F95D2440D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B4E0E31-710F-4E49-A1FC-FF0F95D2440D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B4E0E31-710F-4E49-A1FC-FF0F95D2440D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CF41275-BFB8-4EB8-A716-AF30430062F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CF41275-BFB8-4EB8-A716-AF30430062F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CF41275-BFB8-4EB8-A716-AF30430062F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CF41275-BFB8-4EB8-A716-AF30430062F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

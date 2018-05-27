@@ -56,6 +56,10 @@
       <Project>{8899655C-FF12-4F52-914C-5783647AA8EB}</Project>
       <Name>DotNet.Models</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DotNet.Tools\DotNet.Tools.csproj">
+      <Project>{3B4E0E31-710F-4E49-A1FC-FF0F95D2440D}</Project>
+      <Name>DotNet.Tools</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -38,6 +38,8 @@ namespace DotNet.DAL
                 .ToList();
         }
 
+       
+
         public Book GetByISBN(string isbn)
         {
             return this._database.SingleOrDefault(book => book.ISBN == isbn);
@@ -48,18 +50,19 @@ namespace DotNet.DAL
             return this._database.Where(x => x.Title == title)
                 .ToList();
         }
+       
+
+        public void DecreaseProductsAvailable(int bookId, int numberOrdered)
+        {
+            var book = GetById(bookId);
+
+            book.ProductsAvailable -= numberOrdered;
+        }
 
         public List<Book> GetByAuthorAndAvailable(string author)
         {
             return this._database.Where(x => x.Author == author && x.ProductsAvailable > 0)
                 .ToList();
-        }
-
-        public void UpdateBookAvailability(int id, int productsAvailable)
-        {
-            var book = GetById(id);
-
-            book.ProductsAvailable = productsAvailable;
         }
 
         public List<Book> GetBooksByProducts(int products)

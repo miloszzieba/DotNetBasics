@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DotNet.DAL;
 using DotNet.Models;
+using DotNet.Models.Exceptions;
 using DotNet.Models.Warning;
 
 namespace DotNet.Services.Analyzares
@@ -21,6 +22,8 @@ namespace DotNet.Services.Analyzares
             var warningList = new List<BookWarning>();
 
             var tooMuchBooks = _bookRepository.GetBooksByProductsGreaterOrEqual(50);
+            if (!tooMuchBooks.Any())
+                throw new AnalyzerDataException("Lista jest pusta");
 
             foreach (var book in tooMuchBooks)
             {
